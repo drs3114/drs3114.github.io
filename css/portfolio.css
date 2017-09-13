@@ -1,0 +1,252 @@
+.scenery {
+	background-image: url("../images/backgrnd.jpg");
+	width: 100%;
+	height: 100%
+}
+
+.abt-pic-transform {
+	width: 45%;
+	height: 45%;
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+	/* -webkit-transform: rotate(270deg); */
+	padding-top: 30%
+}
+
+.abt-pic {
+	width: 100;
+	height: 200;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	top: 50%;
+	left: 50% /* padding-top: 30% */
+}
+
+h1 {
+	/* font-family: Consolas, monaco, monospace; */
+	font-family: 'Assistant', sans-serif;
+	font-size: 44px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	font-weight: 500;
+	text-align: center;
+}
+
+h2 {
+	/* font-family: Consolas, monaco, monospace; */
+	font-family: 'Assistant', sans-serif;
+	font-size: 26px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	font-weight: 500;
+	text-align: center;
+	color: grey;
+}
+
+h3 {
+	/* font-family: Consolas, monaco, monospace; */
+	font-family: 'Assistant', sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	font-weight: 500;
+	color: grey;
+}
+
+h4 {
+	/* font-family: Consolas, monaco, monospace; */
+	font-family: 'Assistant', sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	font-weight: 500;
+}
+
+h5 {
+	/* font-family: Consolas, monaco, monospace; */
+	font-family: 'Assistant', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	font-weight: 500;
+	text-align: center;
+}
+
+p {
+	/* font-family: Consolas, monaco, monospace; */
+	font-family: 'Assistant', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	text-align: center;
+	color: grey;
+}
+
+.borderless tr, .borderless td, .borderless th {
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+}
+
+.address-left {
+	font-family: Consolas, monaco, monospace;
+	font-style: normal;
+	font-variant: normal;
+	text-align: left;
+	color: grey;
+}
+
+.address-right {
+	font-family: Consolas, monaco, monospace;
+	font-style: normal;
+	font-variant: normal;
+	text-align: right;
+	color: grey;
+}
+
+.address-just {
+	font-family: Consolas, monaco, monospace;
+	font-style: normal;
+	font-variant: normal;
+	text-align: justify;
+	color: grey;
+}
+
+.pf-footer {
+	position: relative;
+	margin-top: -150px;
+	height: 150px;
+	clear: both;
+	padding-top: 20px;
+}
+
+.nav-center {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	width: 50%;
+}
+
+small {
+	font-size: 85%;
+}
+
+.ribbon {
+	font-size: 16px !important;
+	/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+	width: 50%;
+	position: relative;
+	background: #ba89b6;
+	color: #fff;
+	text-align: center;
+	padding: 1em 2em; /* Adjust to suit */
+	margin: 2em auto 3em;
+	/* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+.ribbon:before, .ribbon:after {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: -1em;
+	border: 1.5em solid #986794;
+	z-index: -1;
+}
+
+.ribbon:before {
+	left: -2em;
+	border-right-width: 1.5em;
+	border-left-color: transparent;
+}
+
+.ribbon:after {
+	right: -2em;
+	border-left-width: 1.5em;
+	border-right-color: transparent;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #804f7c transparent transparent transparent;
+	bottom: -1em;
+}
+
+.ribbon .ribbon-content:before {
+	left: 0;
+	border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after {
+	right: 0;
+	border-width: 1em 1em 0 0;
+}
+
+.non-semantic-protector {
+	position: relative;
+	z-index: 1;
+
+}
+
+.rotate-me {
+	-webkit-transform:rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.carousel {
+    width:640px;
+    height:360px;
+}
+
+hr.colored {
+	border: 0;   /* in order to override TWBS stylesheet */
+	height: 5px;
+
+	background: -moz-linear-gradient(left, rgba(196,222,138,1) 0%, rgba(196,222,138,1) 12.5%, rgba(245,253,212,1) 12.5%, rgba(245,253,212,1) 25%, rgba(255,208,132,1) 25%, rgba(255,208,132,1) 37.5%, rgba(242,122,107,1) 37.5%, rgba(242,122,107,1) 50%, rgba(223,157,185,1) 50%, rgba(223,157,185,1) 62.5%, rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%, rgba(95,156,217,1) 75%, rgba(95,156,217,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 100%);  /* FF3.6+ */
+	background: -webkit-linear-gradient(left, rgba(196,222,138,1) 0%, rgba(196,222,138,1) 12.5%, rgba(245,253,212,1) 12.5%, rgba(245,253,212,1) 25%, rgba(255,208,132,1) 25%, rgba(255,208,132,1) 37.5%, rgba(242,122,107,1) 37.5%, rgba(242,122,107,1) 50%, rgba(223,157,185,1) 50%, rgba(223,157,185,1) 62.5%, rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%, rgba(95,156,217,1) 75%, rgba(95,156,217,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(196,222,138,1) 0%, rgba(196,222,138,1) 12.5%, rgba(245,253,212,1) 12.5%, rgba(245,253,212,1) 25%, rgba(255,208,132,1) 25%, rgba(255,208,132,1) 37.5%, rgba(242,122,107,1) 37.5%, rgba(242,122,107,1) 50%, rgba(223,157,185,1) 50%, rgba(223,157,185,1) 62.5%, rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%, rgba(95,156,217,1) 75%, rgba(95,156,217,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(196,222,138,1) 0%, rgba(196,222,138,1) 12.5%, rgba(245,253,212,1) 12.5%, rgba(245,253,212,1) 25%, rgba(255,208,132,1) 25%, rgba(255,208,132,1) 37.5%, rgba(242,122,107,1) 37.5%, rgba(242,122,107,1) 50%, rgba(223,157,185,1) 50%, rgba(223,157,185,1) 62.5%, rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%, rgba(95,156,217,1) 75%, rgba(95,156,217,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(196,222,138,1) 0%, rgba(196,222,138,1) 12.5%, rgba(245,253,212,1) 12.5%, rgba(245,253,212,1) 25%, rgba(255,208,132,1) 25%, rgba(255,208,132,1) 37.5%, rgba(242,122,107,1) 37.5%, rgba(242,122,107,1) 50%, rgba(223,157,185,1) 50%, rgba(223,157,185,1) 62.5%, rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%, rgba(95,156,217,1) 75%, rgba(95,156,217,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 100%); /* W3C */
+}
+
+.typewriter {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation:
+			typing 3.5s steps(40, end),
+			blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange; }
+}
